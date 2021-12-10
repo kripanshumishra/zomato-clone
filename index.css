@@ -1,0 +1,203 @@
+body{
+    margin:auto;
+}
+
+.white{
+    color: #fff !important;
+}
+ul{
+    display: flex;
+    /* removing dot from ul */
+    list-style: none; 
+    justify-content: space-around
+
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: rgb(236, 230, 230);
+}
+
+.black-icon{
+    font-size: x-large;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 2%;
+    color: #302f2f;
+}
+
+li{
+    text-decoration: none;
+}
+.header{
+    height: 330px;
+    border: 2px solid black;
+    background-image: url('img/bg1.jpg');
+    background-size: cover;
+      
+}
+/* header menu */
+.headerMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.headerMenu > a{
+    margin-left: 5%;
+}
+.headerMenu > div{
+    margin-right: 5%;
+    width: 26%;
+  
+
+}
+
+/* zomato logo */
+.companyLogo{
+    color: #fff;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 0.5;
+}
+#logoSubtext{
+    display: block;
+    text-align: center;
+    font-size: xx-large;
+    color: #fff;
+    line-height: 0.6;
+}
+
+/* search */
+#search{
+    display: flex;
+    width: 60%;
+    border: 3px solid rgb(166, 166, 167);
+    margin-top: 3.5%;
+    margin-left: 20%;
+    background-color: #fff;
+    color: #111;
+    border-radius: 15px;
+}
+#search >input{
+    width: 45%;
+    height: 3em;
+    margin-left: 1%;
+    font-size: larger;
+    border: rgb(166, 166, 167);
+    border-radius: 15px;
+}
+
+.icon{
+    font-size: x-large;
+    margin-top: 2.4%;
+    margin-left: 8%;
+    color: #b7b7b7;
+}
+
+.dropDown{
+    width: 33%;
+}
+
+.dropDown >select{
+    width: 100%;
+    height: 3em;
+    font-size: larger;
+    border-radius: 5px;
+    border: none;
+}
+/* headerend */
+
+
+/* tile start */
+.tile{
+    width: 90%;
+    margin-left:5%;
+    margin-top:5%;
+    border: 0.5px solid rgb(209, 201, 201);
+    padding-left: 2%;
+    background-color: #fff;
+}
+.tile >h2{
+    font-size: xx-large;
+    margin-top: 1%;
+}
+.discription{
+    position: relative;
+    top: -20px;
+    font-size: x-large;
+}
+.tile >a{
+    color: #ec1026;
+    margin-left: 6%;
+    position: relative;
+    top: -22px;
+    font-size: large;
+}
+.cart-img{
+    width: 23%;
+    height: 350px;
+    border: 2px solid;
+    margin-right: 1%;
+    margin-top: 2%;
+    display: inline-block;
+    border-radius: 7px;
+    margin-bottom:2%;
+}
+
+
+
+
+/* App */
+#App{
+    width: 60%;
+    margin-left: 20%;
+    border: 0.5px solid rgb(209, 201, 201);
+    margin-top: 8%;
+    background-color: #fff;
+}
+
+#app-img{
+    width: 40%;
+    height: 320px;
+    border-radius: 5px;
+}
+
+#app-info{
+    float: right;
+    width: 55%;
+}
+#app-info-heading{
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-top: 1%;
+}
+.font-small{
+    color: gray;
+    font-size: large !important;
+}
+#app-info >label{
+    display: block;
+    font-size: x-large;
+    margin-top: 10%;
+}
+#app-info >input{
+    width: 55%;
+    height: 2em; 
+    font-size: large;
+    border: 1px solid rgb(122, 120, 120);
+    border-radius: 5px;
+    margin-top: 3%;
+}
+#app-info >button{
+    /*position: relative; */
+    /* margin-top: 20%; */
+    background-color: #FA4616;
+    font-size: large;
+    padding: 2% 5%;
+    color: #fff;
+    border: rgb(242, 58, 12);
+    border-radius: 5px;
+    margin-left: 4%;
+}
+
