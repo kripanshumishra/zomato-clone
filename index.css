@@ -118,7 +118,7 @@ li{
     padding-left: 2%;
     background-color: #fff;
 }
-.tile >h2{
+.tile1 >h2{
     font-size: xx-large;
     margin-top: 1%;
 }
@@ -127,7 +127,7 @@ li{
     top: -20px;
     font-size: x-large;
 }
-.tile >a{
+.tile1 >a{
     color: #ec1026;
     margin-left: 6%;
     position: relative;
