@@ -71,10 +71,10 @@ li{
 /* search */
 #search{
     display: flex;
-    width: 60%;
+    width: 65%;
     border: 3px solid rgb(166, 166, 167);
     margin-top: 3.5%;
-    margin-left: 20%;
+    margin-left: 18%;
     background-color: #fff;
     color: #111;
     border-radius: 15px;
@@ -201,3 +201,113 @@ li{
     margin-left: 4%;
 }
 
+
+/*           Media query */
+
+
+@media screen and (max-width:950px) {
+    .headerMenu > div{
+        margin-right: 4%;
+        width: 35%;
+          
+    }
+    .cart-img {
+        width: 30%;
+        margin-right: 2%;
+    }
+    
+}
+
+
+@media screen and (max-width:750px) {
+    .headerMenu > div{
+        margin-right: 4%;
+        width: 40%;
+          
+    }
+    .cart-img {
+        width: 42%;
+        margin-left: 3%;
+    }
+    #search {
+        width: 80%;
+        margin-left: 10%;
+    }
+    #logoSubtext {
+        line-height: 0.8;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    
+}
+
+@media screen and (max-width:570px) {
+    .headerMenu > div{
+        margin-right: 4%;
+        width: 50%;
+          
+    }
+    .cart-img {
+        width: 60%;
+        margin-left: 20%;
+    }
+    #logoSubtext {
+        font-size: x-large;
+        line-height: 1;
+    }
+    .discription {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .header{
+        height: 350px;
+    }
+    .headerMenu > div{
+        margin-right: 4%;
+        width: 60%;
+          
+    }
+    .cart-img {
+        width: 70%;
+        margin-left: 15%;
+        height: 300px;
+    }
+    #logoSubtext {
+        font-size: x-large;
+        line-height: 1;
+    }
+    .black-icon {
+        font-size: large;
+        margin-left: 5;
+        margin-top: 4%;
+    }
+    .icon {
+        font-size: large;
+        margin-top: 4%;
+        margin-left: 1%;
+
+    }
+    #search{
+        display: block;
+        width: 80%;
+        border: none;
+        margin-left: 10%;
+    }
+    .dropDown{
+        width: 72%;
+        margin-left: 5%;
+        display: inline-block;
+        margin-right: 7%;
+    }
+    #search >input{
+        width: 78%;
+        margin-left: 3%;
+        font-size: 1em;
+    }
+    .companyLogo{
+        font-size: x-large;
+    }
+}
