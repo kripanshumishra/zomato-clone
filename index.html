@@ -2,289 +2,161 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/97f33a6782.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="index.css">
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zomato</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/97f33a6782.js" crossorigin="anonymous" async></script>
+
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <!-- header menu -->
+  <div class="couponContainer">
+    <div class="coupon">
+      <button onclick="closeDiv(event)">&times;</button>
+      <!-- <div class="container">
+        <h3>Company Logo</h3>
+      </div> -->
+      <!-- <img src="https://www.w3schools.com/w3images/hamburger.jpg" alt="Avatar" style="width:100%;"> -->
+      <div class="container" >
+        <h2><b>20% OFF YOUR PURCHASE</b></h2>
+        <!-- <p>Lorem ipsum..</p> -->
+      </div>
+      <div class="container">
+        <p>Use Promo Code: <span class="promo">BOH232</span></p>
+        <p class="expire">Expires: Jan 03, 2021</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- nav -->
 
-        <nav class="navbar navbar-expand-md">
-        
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#header-head" style="background-color: black;">
-                <span class="navar-toggler-icon" ></span>
-            </button>
-        
-            <div id="header-head">
-        
-                <ul class="navbar-nav navbar-list">
-        
-                    <li class="nav-item white">contact us</li>       
-                    <li class="nav-item white li-left">
-                        <ul class="header-head-left">
-                            <li class="nav-item"> <a href="#" class="white"> Add restaurant</a></li>
-                            <li class="nav-item"> <a href="#" class=" white">Log in</a> </li>
-                            <li class="nav-item"> <a href="#" class="white">Sign up </a> </li>
-                        </ul>
-                    </li> 
 
-                 
-        
-                </ul> 
-        
-            </div>
-        </nav>
+  <!-- search start -->
+  <div id="body">
+    <header class="pb-5">
+      <nav class="navbar navbar-expand-sm navbar-dark ">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon fs-6"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
 
-       
-        <!-- <div class="headerMenu" id="header-head">
-
-            <a href="#">
-                <span class="white">contact us </span>
-            </a>
-            <div>
-                <ul>
-                    <li> <a href="#" class="white"> Add restaurant</a></li>
-                    <li> <a href="#" class="white">Log in</a> </li>
-                    <li> <a href="#" class="white">Sign up </a> </li>
-
-                </ul>
-            </div>
+            <ul class="navbar-nav container-fluid mx-lg-5 my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px;">
+              <li class="nav-item me-auto">
+                <a class="nav-link " href="#" style="color:#fff">Get Zomato app</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color:#fff">Add restaurant</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color:#fff">Log in</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color:#fff">Sign up</a>
+              </li>
+            </ul>
+          </div>
         </div>
-         -->
-        <!-- search start -->
-        <div class="companyLogo">
-            <h1>zomato</h1>
-        </div>
-        <span id="logoSubtext">Discover the best food & drinks in Lucknow</span>
+      </nav>
 
-        <div id="search">
-            <i class="fas fa-map-marker-alt black-icon"></i>
-            <div class="dropDown">
-                <select name="" id="">
-                    <option value="">----Select Cite----</option>
-                    <option value="">Delhi</option>
-                    <option value="">Lucknow</option>
-                    <option value="">Kolkata</option>
-                    <option value="">Nasik</option>
-                </select>
-            </div>
-            <i class="fas fa-search icon"></i>
-            <input type="text" placeholder="Search for restaurant, cuisine or a dish">
+
+      <p class="display-3 mb-0 mt-5" id="company-name">zomato</p>
+      <p class="fs-3 text-center caption mt-0 lh-1 mb-4 ">Discover the best food & drinks in Lucknow</p>
+
+      <!-- search start -->
+
+      <div class="d-sm-flex container-search">
+        <div class="input-group mb-3 mb-sm-0 dropdown-container">
+          <label class="input-group-text" for="dropdown"><i class="fas fa-map-marker-alt fs-3"
+              style="color:rgb(255, 126, 139); "></i></label>
+          <select class="form-select" id="dropdown" onChange="getHotel()">
+            <!-- <option selected>Choose...</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option> -->
+          </select>
         </div>
+        <div class="input-group mb-3 mb-sm-0">
+          <label class="input-group-text" for="search"><i class="fas fa-search icon fs-3"
+              style="color: rgb(172, 166, 166); "></i></label>
+          <!-- <input type="text" id="search" class="form-control" placeholder="Search for restaurant, cuisine or a dish" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"> -->
+          <select class="form-select" id="search" >
+
+          </select>
+        </div>
+
     </header>
 
+    <!-- body -->
+    <section class="w-75 mx-auto mt-5 lh-1">
+      <p class="fs-1  text-dark "> Collections 
+        <span id="weather-container"></span>
+    </p>
+      <p class="fs-5 mb-4">Explore curated lists of top restaurants, cafes, pubs, and bars in Kanpur, based on trends
+      </p>
 
-    <div class="container">
 
-        <div class="tile">
-            <div class="tile1">
+      <div class="row ">
 
-                <h2>Collections</h2>
-                <span class="discription">Explore curated lists of top restaurants, cafes, pubs, and bars in Lucknow, based
-                    on trends </span>
-                <a href="./listing/menuCart.html">All collections in Lucknow > </a>
-
+        <div class="card w-25 ps-3 position-relative my-3">
+          <a href="#" class="text-decoration-none">
+            <img src="nightlife.png" alt="" class="img-fluid card-img-top img-card">
+            <div class="card-body img-desc ">
+              <p class="card-text "> for the family <i class="fas fa-caret-right"></i></p>
+              <span>10 place</span>
             </div>
-
-            <!-- card starting -->
-
-            <div class="row">
-                <div class="card col-md-6 col-lg-5 col-xl-3 col-sm-6 ">
-                    <div id="card1" class="carousel slide" data-ride="carousel" data-interval="false">
-                        <!-- here i passed data-interval = "false" because i dont want my craousel to slide automatically -->
-                        <!-- Indicators -->
-                        <ul class="carousel-indicators">
-                            <li data-target="#card1" data-slide-to="0" class="active"></li>
-                            <li data-target="#card1" data-slide-to="1"></li>
-                            <li data-target="#card1" data-slide-to="2"></li>
-                        </ul>
-        
-                        <!-- The slideshow -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="img/food-tile.png" alt="Los Angeles" width=auto height="400px" class="card-img-top card-img">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/nightlife.png" alt="Chicago" width="1100" height="400" class="card-img-top card-img">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/party.jfif" alt="New York" width="1100" height="400" class="card-img-top card-img">
-                            </div>
-                        </div>
-        
-                        <!-- Left and right controls -->
-                        <a class="carousel-control-prev" href="#card1" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#card1" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </a>
-                    </div>
-                    <div class="card-body container-fluid">
-                        <h4 class="card-title">Trending</h4>
-                        <p class="card-text">Lorem ipsum dolor sit.</p>
-                        <a href="#" class="btn btn-primary orange">Explore</a>
-                    </div>
-                </div>
-        
-        
-                <div class="card  col-md-6 col-lg-5 col-sm-6 col-xl-3" >
-                    <div id="card2" class="carousel slide" data-ride="carousel" data-interval="false">
-                        <!-- here i passed data-interval = "false" because i dont want my craousel to slide automatically -->
-                        <!-- Indicators -->
-                        <ul class="carousel-indicators">
-                            <li data-target="#card2" data-slide-to="0" class="active"></li>
-                            <li data-target="#card2" data-slide-to="1"></li>
-                            <li data-target="#card2" data-slide-to="2"></li>
-                        </ul>
-        
-                        <!-- The slideshow -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="img/party.jfif" alt="party" width=auto height="400px" class="card-img-top card-img">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/nightlife.png" alt="nightlife" width="1100" height="400" class="card-img-top card-img">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/food-tile.png" alt="food" width="1100" height="400" class="card-img-top card-img">
-                            </div>
-                        </div>
-        
-                        <!-- Left and right controls -->
-                        <a class="carousel-control-prev" href="#card2" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#card2" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </a>
-                    </div>
-                    <div class="card-body container-fluid">
-                        <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text.</p>
-                        <a href="#" class="btn btn-primary orange">See Profile</a>
-                    </div>
-                </div>
-        
-        
-        
-                <div class="card col-md-6 col-sm-6 col-lg-5 col-xl-3" >
-                    <div id="card3" class="carousel slide" data-ride="carousel" data-interval="false">
-                        <!-- here i passed data-interval = "false" because i dont want my craousel to slide automatically -->
-                        <!-- Indicators -->
-                        <ul class="carousel-indicators">
-                            <li data-target="#card3" data-slide-to="0" class="active"></li>
-                            <li data-target="#card3" data-slide-to="1"></li>
-                            <li data-target="#card3" data-slide-to="2"></li>
-                        </ul>
-        
-                        <!-- The slideshow -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="img/nightlife.png" alt="nightlife" width=auto height="400px" class="card-img-top card-img">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/party.jfif" alt="party" width="1100" height="400" class="card-img-top card-img">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/food-tile.png" alt="food" width="1100" height="400" class="card-img-top card-img">
-                            </div>
-                        </div>
-        
-                        <!-- Left and right controls -->
-                        <a class="carousel-control-prev" href="#card3" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#card3" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </a>
-                    </div>
-                    <div class="card-body container-fluid">
-                        <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text.</p>
-                        <a href="#" class="btn btn-primary orange">See Profile</a>
-                    </div>
-                </div>
-               
-        
-        
-                <div class="card col-sm-6  col-md-6 col-lg-5 col-xl-3" >
-                    <div id="card4" class="carousel slide" data-ride="carousel" data-interval="false">
-                        <!-- here i passed data-interval = "false" because i dont want my craousel to slide automatically -->
-                        <!-- Indicators -->
-                        <ul class="carousel-indicators">
-                            <li data-target="#card4" data-slide-to="0" class="active"></li>
-                            <li data-target="#card4" data-slide-to="1"></li>
-                            <li data-target="#card4" data-slide-to="2"></li>
-                        </ul>
-        
-                        <!-- The slideshow -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="img/food-tile.png" alt="food" width=auto height="400px" class="card-img-top card-img">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/nightlife.png" alt="nightlife" width="1100" height="400" class="card-img-top card-img">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/party.jfif" alt="party" width="1100" height="400" class="card-img-top card-img">
-                            </div>
-                        </div>
-        
-                        <!-- Left and right controls -->
-                        <a class="carousel-control-prev" href="#card4" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#card4" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </a>
-                    </div>
-                    <div class="card-body container-fluid">
-                        <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text.</p>
-                        <a href="#" class="btn btn-primary orange">See Profile</a>
-                    </div>
-                </div>
-        
+          </a>
+        </div>
+        <div class="card w-25 ps-3 position-relative my-3">
+          <a href="#" class="text-decoration-none">
+            <img src="nightlife.png" alt="" class="img-fluid card-img-top img-card">
+            <div class="card-body img-desc ">
+              <p class="card-text "> for the family <i class="fas fa-caret-right"></i></p>
+              <span>10 place</span>
             </div>
-    
-
-
+          </a>
+        </div>
+        <div class="card w-25 ps-3 position-relative my-3">
+          <a href="#" class="text-decoration-none">
+            <img src="party.jfif" alt="" class="img-fluid card-img-top img-card">
+            <div class="card-body img-desc ">
+              <p class="card-text "> for the family <i class="fas fa-caret-right"></i></p>
+              <span>10 place</span>
+            </div>
+          </a>
+        </div>
+        <div class="card w-25 ps-3 position-relative my-3">
+          <a href="#" class="text-decoration-none">
+            <img src="nightlife.png" alt="" class="img-fluid card-img-top img-card">
+            <div class="card-body img-desc ">
+              <p class="card-text "> for the family <i class="fas fa-caret-right"></i></p>
+              <span>10 place</span>
+            </div>
+          </a>
         </div>
 
 
-        <!-- other-info -->
-
-        <div id="App">
-
-            <img src="preview1.jpg" alt="" id="app-img" class="img">
-
-            <div id="app-info">
-                <p id="app-info-heading">Get the zomato App now</p>
-                <p class="discription font-small">We will send you a link, open it on your phone to download the app
-                </p>
-                <label for="email">Enter your email:</label>
-                <input type="email" id="email" name="email" placeholder="enter email id here">
-                <button>share app link</button>
-            </div>
-        </div>
-        
-    </div>
+      </div>
 
 
-        
-    
+    </section>
+  </div>
+  <script>
+    window.onload = getCity()
+    window.onload = getCoupon()
+  </script>
 </body>
 
 </html>

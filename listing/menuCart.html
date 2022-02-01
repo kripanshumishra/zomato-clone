@@ -24,18 +24,24 @@
         <div id="search-dropdown">
             <i class="fas fa-map-marker-alt location-icon"></i>
             <div class="dropDown">
-                <select name="" id="">
+                <!-- <select name="" id="">
                     <option value="">----Select Cite----</option>
                     <option value="">Delhi</option>
                     <option value="">Lucknow</option>
                     <option value="">Kolkata</option>
                     <option value="">Nasik</option>
-                </select>
+                </select> -->
+                <select class="form-select" id="dropdown" onChange="getHotel()">
+                   
+                  </select>
             </div>
         </div>
         <div id="search-input">
             <i class="fas fa-search " id="search-icon"> </i>
-            <input type="text" placeholder="Search for restaurant, cuisine or a dish">
+            <!-- <input type="text" placeholder="Search for restaurant, cuisine or a dish"> -->
+            <select class="form-select" id="search" onChange="getHotel()">
+
+            </select>
         </div>
         <button class="signup-btn">Sign up</button>
 
