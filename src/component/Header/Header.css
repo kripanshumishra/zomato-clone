@@ -1,0 +1,85 @@
+.header-main{
+    background-image:url("bg1.jpg");
+    background-size: cover;
+    width: 100%;
+    height:45vh;
+    min-height: 350px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+.search-container-wrapper{
+    display: flex;
+    width: 90%;
+    margin-bottom: 6.5rem;
+    border: 4px ;
+}
+.search-container{
+    width: 74%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    background-color:#fff;
+}
+.city-search{
+    flex: 0.36;
+    background-color: #fff;
+}
+.city-search > select{
+    width: 88%;
+    outline: none;
+    border: none;
+}
+.restaurant-search{
+    flex:0.64;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    height: 100%;
+}
+.restaurant-search > select{
+    width: 90%;
+    outline: none;
+    border: none;
+}
+.fav-icon{
+    padding: 0.6rem;
+    /* background-color: #fff; */
+}
+.line{
+    background-color: rgb(180 180 180);
+    width: 1.7px;
+    height: 25px;
+}
+@media screen and (max-width:576px) {
+    .container-search{
+        width: 64%;
+        margin-left: 18%;
+    }
+    
+}
+@media screen and (max-width:391px) {
+
+    .container-search{
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+}
+
+@media screen and (min-width:577px) {
+    .container-search{
+        background-color: #fff;
+        border-radius: 7px;
+        border: 1px solid #fff;
+    }
+    .dropdown-container{
+        width: 44%;
+    }
+    .container-search{
+        width: 65%;
+        margin-left:17%;
+    }
+}
