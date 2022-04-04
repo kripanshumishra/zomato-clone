@@ -18,7 +18,15 @@
   }
 .navbar__links a {
     padding-left: 1.2rem;
+    color: #74b5a7;
+}
+.navbar__links button {
+    padding-left: 1.2rem;
     color: rgb(255, 255, 255 ,0.85);
+    background-color: #74b5a7;
+    margin-left: 0.8rem;
+    padding-right: 1rem;
+    font-weight: 600;
 }
 .active{
     color: rgb(255, 255, 255 ,1) !important
